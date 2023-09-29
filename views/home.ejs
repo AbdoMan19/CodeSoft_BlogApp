@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="main-title-box text-center">
+        <h2 class="big-title">Featured Post</h2>
+    </div>
+    <div class="row">
+        <% featuredPost.forEach(post => { %>
+            <div class="col-lg-4 col-md-6 wow " data-wow-delay="0ms">
+                <div class="news-item">
+                    <div class="news_box">
+                        <div class="newsimg">
+                            <img class="img-responsive" src="<%= post.image %>" alt="">
+                        </div>
+                        <div class="news-content">
+                            <div class="news_postdate">
+                                <span><%= post.createdAt.toDateString() %></span>
+                            </div>
+                            <a href="/blogs/<%= post._id %>">
+                                <h3><%= post.title %></h3>
+                            </a>
+                            
+                            <div class="news_authorinfo">
+                                <span><i class="fa fa-user"></i> <a href=""><%= post.user.username %></a></span>
+                                <span><i class="fa fa-comment"></i> <a href="/comments/<%= post._id %>">Comments: (<%= post.comments.length %>)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-title-box text-center">
+        <h2 class="big-title">Most Read Post</h2>
+    </div>
+    <div class="row">
+        <% mostReadPost.forEach(post => { %>
+            <div class="col-lg-4 col-md-6 wow " data-wow-delay="0ms">
+                <div class="news-item">
+                    <div class="news_box">
+                        <div class="newsimg">
+                            <img class="img-responsive" src="<%= post.image %>" alt="">
+                        </div>
+                        <div class="news-content">
+                            <div class="news_postdate">
+                                <span><%= post.createdAt.toDateString() %></span>
+                            </div>
+                            <a href="/blogs/<%= post._id %>">
+                                <h3><%= post.title %></h3>
+                            </a>
+                            
+                            <div class="news_authorinfo">
+                                <span><i class="fa fa-user"></i> <a href=""><%= post.user.username %></a></span>
+                                <span><i class="fa fa-comment"></i> <a href="/comments/<%= post._id %>">Comments: (<%= post.comments.length %>)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+        
+    </div>
+</div>
+
+
+<div class="load-container "><button  class="load-button" ><a href="/blogs">load more</a></button></div>
+<script src="/js/home.js"></script>

@@ -1,0 +1,102 @@
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1 {
+    font-weight: 600;
+}
+.time {
+    display: flex;
+    align-items: center;
+}
+.time svg {
+    fill: currentColor;
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+.author svg {
+    fill: currentColor;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+.bg-image {
+    max-width: 100%;
+    
+}
+.blog-container img{
+    height: 400px;
+    max-width: 100%;
+}
+.content {
+    padding: 20px;
+    line-height: 2;
+}
+h3 {
+    font-weight: bold;
+    color: #333;
+}
+blockquote {
+    border-left: 4px solid black;
+    font-style: italic;
+    padding: 10px;
+    line-height: 2;
+    color: #007bff;
+}
+.tags {
+    margin-top: 20px;
+}
+.tags a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+.comment-box{
+    width: 70%;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165) ;
+    margin-bottom: 25px;
+}
+.comment-box p{
+    text-align: left;
+    font-size: 28px;
+    color: #777;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    color: #777;
+}
+.comment-form button{
+    margin: 10px 0;
+    border: none;
+    background-color: #d0d0d0;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #444;
+}
+button:hover{
+    color: white;
+    background-color: #444;
+}
+textarea{
+    height: 100px;
+    width: inherit;
+}

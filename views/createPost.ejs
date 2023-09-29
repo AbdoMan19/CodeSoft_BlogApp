@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/createPost.css">
+<script src="/js/createPost.js"></script>
+<div class="container">
+    <h1>Create a Blog Post</h1>
+    <form onsubmit="handleFormSubmission(event)" enctype="multipart/form-data">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" rows="6" required></textarea>
+
+        <label for="tags">Tags:</label>
+        <select id="tag" name="tag" required >
+            <option value="" disabled selected></option>
+            <% tags.forEach(tag => { %>
+                <option value="<%= tag.title %>"><%= tag.title %></option>
+            <% }) %>
+        </select>
+
+        <label for="image">Upload Image:</label>
+        <input id="inputFileToLoad" type="file" onchange="encodeImageFileAsURL();" required />
+
+        <button type="submit"  class="submit-button">Publish</button>
+    </form>
+</div>

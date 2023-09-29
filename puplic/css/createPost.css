@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #24262b;
+    --secondary-color: #03c8c1;
+    --black-color: #000;
+}
+main .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    color: var(--secondary-color);
+}
+
+/* Form Styling */
+main form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+main input[type="text"],
+main textarea {
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main input[type="file"] {
+    margin-top: 5px;
+}
+
+/* Tag Styling */
+main .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .tag {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+main .submit-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    main .container {
+        padding: 10px;
+    }
+}

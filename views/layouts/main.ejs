@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title %></title>
+    <meta name="description" content="<%= locals.description %>">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <% if (!hideHeader) { %>
+        <%- include('../partials/header.ejs') %>
+    <% } %>
+    <main>
+        <%- body  %>
+    </main>
+    <% if (!hideFooter) { %>
+        <%- include('../partials/footer.ejs') %>
+    <% } %>
+    
+</body>
+</html>

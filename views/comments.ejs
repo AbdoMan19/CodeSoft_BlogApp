@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/comments.css">
+<section class="comments">
+    <div class="full-boxer">
+        <% comments.forEach(comment=> { %>
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="Profile">
+                        <div class="profile-image">
+                            <img src="/<%= comment.user.image %>">
+                        </div>
+                        <div class="Name">
+                            <strong><%= comment.user.username %></strong>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        <%= comment.text %>
+                    </p>
+                </div>
+            </div>
+        <% }) %>
+        
+    </div>
+</section>

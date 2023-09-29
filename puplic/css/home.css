@@ -1,0 +1,373 @@
+/* Define CSS custom properties for color values */
+:root {
+    --primary-color: #24262b;
+    --secondary-color: #03c8c1;
+    --black-color: #000;
+}
+
+/* General styles for the body and header */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+h1,h2,
+h3,
+h4,
+h5,
+h6 {}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+body{
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif !important;
+  background-color: #eee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+
+}
+
+header a {
+    color: white;
+
+}
+
+
+/* Navigation menu styles */
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul > li a {
+    color: white;
+    transition: 0.4s;
+}
+header input{
+    color: white;
+    transition: 0.4s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+header input:hover,
+header ul > li a:hover {
+    color: var(--secondary-color);
+}
+
+:root {
+    --primary-color: #24262b;
+    --secondary-color: #03c8c1;
+    --black-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.news-section {
+    padding:90px 0;
+  }
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Main title styles */
+.main-title-box {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.small-title {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #FF3A46;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.big-title {
+    letter-spacing: 0px;
+    padding-bottom: 13px;
+    position: relative;
+    color: #233D63;
+    line-height: 50px;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* Row styles */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Column styles */
+.col-lg-4 {
+    float: left;
+    width: calc(33.33% - 30px); /* Three columns with spacing */
+    margin-right: 30px; /* Spacing between columns */
+    margin-bottom: 30px; /* Spacing between rows */
+}
+
+/* Responsive column styles for medium devices (tablets, landscape phones) */
+@media (max-width: 992px) {
+    .col-lg-4 {
+        width: calc(50% - 30px); /* Two columns with spacing */
+    }
+}
+
+/* Responsive column styles for small devices (phones) */
+@media (max-width: 768px) {
+    .col-lg-4 {
+        width: 100%; /* Full width with no spacing */
+        margin-right: 0; /* No spacing between columns */
+        margin-bottom: 30px; /* Spacing between rows */
+    }
+}
+
+/* News item styles */
+.news-item {
+    box-shadow: 0 0 15px #ededed;
+    transition: transform 0.5s;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 15px 0px #edeaea;
+}
+
+.newsimg img {
+    min-width: 200px;
+    width: 100%;
+    max-width: 400px;
+    height: 240px;
+}
+.p{
+    margin: 0px;
+}
+.news_postdate {
+    color: #FF3A46;
+}
+.news_box{
+    padding: 20px;
+}
+.news-content h3 {
+    color: #233D63;
+    font-size: 22px;
+    margin:0px;
+}
+
+.news_authorinfo {
+    padding: 14px 0 0 0;
+    font-size: 14px;
+}
+
+.news_authorinfo i {
+    margin-right: 6px;
+}
+
+.news_authorinfo span:last-child {
+    float: right;
+}
+
+.news_authorinfo a {
+    color: #666;
+}
+.center .news-content {
+    background: linear-gradient(-120deg, #8758ff 0, #614ef9 100%);
+}
+
+.center .news-content h3,
+.center .news-content p {
+    color: #fff;
+}
+
+.center .news_authorinfo a,
+.center .news_authorinfo i {
+    color: #fff;
+}
+
+.news-slide.owl-carousel .col-lg-4 {
+    max-width: 100%;
+    padding: 0;
+}
+
+.news-section .owl-theme .owl-nav [class*="owl-"] {
+    color: #333;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer .raw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-col{
+    width: 22%;
+    padding: 0px 14px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: var(--secondary-color);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  padding-left: 8px;
+  background-color: var(--secondary-color);
+}
+
+.footer-col  a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+footer img{
+    width: 60x;
+    height: 60px;
+}
+header img{
+    width: 40x;
+    height: 40px;
+}
+.load-button{
+    width: 20%;
+    height: auto;
+    background-color: #333;
+    outline: none;
+    color:white ;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 5px;
+    
+}
+.load-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+
+}
+.load-button:hover{
+    background-color: rgb(36, 38, 43,0.9);
+    color:var(--secondary-color) ;
+    
+    
+    
+}
